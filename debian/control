@@ -1,0 +1,18 @@
+Source: golang-github-siddontang-rdb
+Section: devel
+Priority: extra
+Maintainer: pkg-go <pkg-go-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-golang,
+               golang-go,
+               golang-github-cupcake-rdb-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/siddontang/rdb
+
+Package: golang-github-siddontang-rdb-dev
+Architecture: all
+Depends: ${misc:Depends},
+         golang-go
+Built-Using: ${misc:Built-Using}
+Description: Handling redis rdb
+ Handling Redis RDB format.
